@@ -1,0 +1,115 @@
+body {
+    font-family: "Arial", sans-serif, Kantumruy Pro;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    margin: auto;
+  }
+  
+  .icon {
+left: 863px;
+width: 120px;
+height: 121px;
+/* UI Properties */
+opacity: 1;
+  }
+  
+  .title {
+left: 787px;
+width: 348px;
+height: 54px;
+text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+margin-bottom: 2.4rem;
+
+  }
+  
+  .title::after {
+    content: "";
+    display: block;
+    width: 58%;
+    height: 7px;
+    background-color: #8967B3;
+    margin: 5px auto 0;
+    border-radius: 5px;
+  }
+  
+  .subtitle {
+display: block;
+left: 707px;
+width: 350px;
+height: 20px;
+/* UI Properties */
+text-align: left;
+font: normal normal bold 24px/41px Kantumruy Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+  }
+  
+  .instruction {
+    display: flex;
+    left: 707px;
+    width: 350px;
+    height: 41px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/29px Kantumruy Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    line-height: 1.2;
+  }
+  
+  .input-field {
+    border: none; /* Removes the default border */
+    outline: none; 
+    top: 770px;
+left: 707px;
+width: 320px;
+height: 50px;
+/* UI Properties */
+background: #DFDFDF ;
+border-radius: 10px;
+
+text-align: left;
+font: normal normal  18px/36px Kantumruy Pro;
+letter-spacing: 0px;
+color: #111111;
+margin-top: 10px;
+margin-bottom: 10px;
+  }
+  
+  .reset-button {
+    top: 933px;
+left: 749px;
+width: 120px;
+height: 50px;
+text-align: center;
+background-color: #030303;
+font: normal normal bold 20px/41px Kantumruy Pro;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+display: block;
+border-radius: 10px;
+margin-top: 1.7rem;
+  }
+  
+  .reset-button:active {
+    background-color: #732d91;
+  }
+  

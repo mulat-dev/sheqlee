@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif, Kantumruy Pro;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Logo */
+  .logo {
+    top: 150px;
+    left: 863px;
+    width: 99px;
+    height: 100px;
+    background: transparent  0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  
+  /* Header */
+  .header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+   height:26px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .header::after {
+    content: "";
+    display: block;
+    width: 87%;
+    height: 6px;
+    background-color: #872dc4;
+    margin: 5px auto 0;
+    border-radius: 5px;
+  }
+  
+  /* Form Title */
+  .form-title {
+    top: 531px;
+left: 707px;
+width: 250px;
+height: 26px;
+text-align: left;
+font: normal normal bold 22px/41px Kantumruy Pro;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+  }
+  
+  /* Input Group */
+  .input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+  }
+  
+  .input-group input {
+    border: none; /* Removes the default border */
+    outline: none; 
+    top: 597px;
+    left: 707px;
+    width: 327px;
+    height: 50px;
+    background: #DFDFDF 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  
+  /* Password Group */
+  .password-group {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute; 
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #383737;
+    font-size: 20px;
+    
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    border: none; /* Removes the default border */
+    outline: none; 
+    top: 847px;
+    left: 707px;
+    width: 110px;
+    height: 50px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+    color: white;
+    display: inline-block;
+text-align: center;
+font: normal normal bold 18px/36px Kantumruy Pro;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+
+  }
+  
+  .submit-button.active {
+    top: 847px;
+    left: 707px;
+    width: 110px;
+    height: 50px;
+    background: #8967B3 ;
+    border-radius: 15px;
+    opacity: 1;
+  }
+
+  
+  /* Links */
+  .links {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .link {
+    top: 971px;
+left: 707px;
+width: 491px;
+height: 56px;
+text-align: left;
+letter-spacing: 0px;
+opacity: 1;
+color: #0C47EC;
+font-weight: bold;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .new-user {
+    width: 290px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+  }
+  
