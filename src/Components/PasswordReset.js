@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './PasswordReset.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import logo from '../assets/sidebar.png';
+import logo from '../assets/logo.png';
 const PasswordReset = () => {
     const [code, setCode] = useState('');
     const [password, setPassword] = useState('');
@@ -52,14 +52,14 @@ const PasswordReset = () => {
                         <input
                             type={showPassword ? 'text' : 'password'}
                             placeholder="   Password..."
-                            value={password.replace(/./g,'*')}
+                            value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         <span
                             className="password-icon"
                             onClick={() => togglePasswordVisibility('password')}
                         >
-                            {!showPassword ? <FaEyeSlash /> : <FaEye />}
+                            {showPassword ? <FaEyeSlash /> : <FaEye />}
                         </span>
                     </div>
 

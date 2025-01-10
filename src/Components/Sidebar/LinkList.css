@@ -1,0 +1,61 @@
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .link-item {
+    margin-left: -2.4rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #bd1677;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .link-item:active {
+    background-color: #f0f0f0;
+    color: #000000;
+    font-weight: bolder;
+  }
+  
+  .link-icon {
+    top: 296px;
+    left: 46px;
+    width: 23px;
+    height: 23px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-right: 1rem;
+    margin-left: 0rem;
+  }
+  
+  .link-label {
+    top: 291px;
+    left: 115px;
+    width: 155px;
+    height: 36px;
+    text-align: left;
+    font: normal normal 22px/36px Kantumruy Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-left: 1rem;
+  }
+  .link-item.active {
+    background-color: white;  /* Set the background color to white */
+    font-weight: bold;         /* Optional: Make the text bold for active link */
+  }
+  
+  .link-item.active .link-icon {
+    background-color: white;  /* Make the icon background white */
+
+    border-radius:none;       /* Optional: Make the icon rounded (if you want) */
+  }
+  
+  .link-item.active .link-label {
+    color: #0a0a0a;  /* Optional: Change the color of the label */
+font-weight: bolder;  
+
+}

@@ -1,0 +1,27 @@
+.dashboard-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.dashboard-link .link-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.dashboard-link.active {
+    background-color: #000;  /* Active background for the selected link */
+    color: white;             /* White text for active link */
+    font-weight: bold;
+}
+
+.dashboard-link:hover {
+    background-color: #f0f0f0;
+}

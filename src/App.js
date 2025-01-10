@@ -1,7 +1,8 @@
 //import React, { useState } from 'react';
 //import LoginPage from './Components/LoginPage'; // Make sure the path is correct
 //import ResetInitial from './Components/ResetInitial'; // Make sure the path is correct
-import PasswordReset from './Components/PasswordReset';
+//import PasswordReset from './Components/PasswordReset';
+import Sidebar from "./Components/Sidebar/Sidebar";
 function App() {
  /* const [showResetPassword, setShowResetPassword] = useState(false);
 
@@ -33,8 +34,9 @@ function App() {
   );*/
 return(
  //<LoginPage />
-  <PasswordReset />
+  //<PasswordReset />
   //<ResetInitial />
+  <Sidebar />
 
  
 )

@@ -1,0 +1,56 @@
+.profile-view {
+    display: flex;
+    align-items: center; /* Align all items in the center vertically */
+    justify-content: flex-start; 
+    padding: 20px;
+}
+
+.profile-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.profile-name {
+    font: normal normal medium 20px/23px "Kantumruy Pro", sans-serif;
+    color: #000;
+    margin-right: 1rem;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    font: normal normal bold 12px/14px "Kantumruy Pro", sans-serif;
+    color: #000;
+    background-color: #DFDFDF;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: relative;
+    outline: none;
+    margin-left: auto; /* Pushes the button to the right */
+    transition: background-color 0.2s ease;
+}
+
+/* Underline effect */
+.logout-button::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 10px;
+    width: 55%;
+    height: 2px;
+    opacity: 1;
+background: #000000 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+
+.arrow-forward {
+    width: 12px;
+    height: 10px;
+    margin-left: 8px;
+    object-fit: contain;
+}
