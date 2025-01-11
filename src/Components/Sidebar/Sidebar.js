@@ -5,17 +5,15 @@ import ProfileView from "./ProfileView";
 import Logo from "./Logo";
 
 const Sidebar = () => {
-  // State to track active link
-  const [activeLink, setActiveLink] = useState("dashboard");
+  const [activeLink, setActiveLink] = useState("dashboard"); // Default active link
 
-  // Function to handle link click
   const handleLinkClick = (linkName) => {
-    setActiveLink(linkName); // Update active link
+    setActiveLink(linkName); // Update active link on click
   };
 
   return (
     <aside className="sidebar">
-        <Logo />
+      <Logo />
       <ProfileView />
       <ul className="sidebar-links">
         <LinkList activeLink={activeLink} onLinkClick={handleLinkClick} />

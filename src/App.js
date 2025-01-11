@@ -1,46 +1,32 @@
-//import React, { useState } from 'react';
-//import LoginPage from './Components/LoginPage'; // Make sure the path is correct
-//import ResetInitial from './Components/ResetInitial'; // Make sure the path is correct
-//import PasswordReset from './Components/PasswordReset';
+// App.js
+import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./Components/Sidebar/Sidebar";
-function App() {
- /* const [showResetPassword, setShowResetPassword] = useState(false);
+import Dashboard from './Components/Dashbord/Dashboard';
+import JobPosts from "./Components/JobPosts/JobPosts";
+import Companies from './Components/Companies/Companies';
+import Freelancers from './Components/Freelancers/Freelancers';
+import EmailAlerts from './Components/EmailAlerts/EmailAlerts';
 
-  // Function to toggle between Login and ResetPassword components
-  const handleForgotPassword = () => {
-    setShowResetPassword(true); // Show ResetPassword component
-  };
-
-  const handleBackToLogin = () => {
-    setShowResetPassword(false); // Show Login component again
-  };
-
+const App = () => {
   return (
-    <div className="App">
-      {!showResetPassword ? (
-        // Render Login component
-        <div>
-          <LoginPage />
-          <button onClick={handleForgotPassword}>Forgot Password?</button>
-        </div>
-      ) : (
-        // Render ResetPassword component
-        <div>
-          <ResetPassword />
-          <button onClick={handleBackToLogin}>Back to Login</button>
-        </div>
-      )}
-    </div>
-  );*/
-return(
- //<LoginPage />
-  //<PasswordReset />
-  //<ResetInitial />
-  <Sidebar />
-
- 
-)
+    <Router>
+      <div style={{ display: "flex" }}>
+        <Sidebar />
+        <main style={{ marginLeft: "300px", padding: "20px", width: "100%" }}>
+          <Routes>
+            {/* Dashboard route */}
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard/job-posts" element={<JobPosts />} />
+            <Route path="/dashboard/companies" element={<Companies />} />
+            <Route path="/dashboard/freelancers" element={<Freelancers />} />
+            <Route path="/dashboard/email-alerts" element={<EmailAlerts />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
 };
+
 export default App;
-
-
