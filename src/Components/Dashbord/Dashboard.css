@@ -18,13 +18,11 @@ height: 93vh;
 .tab {
   border: none;
   margin-top: -1.2rem;
-  margin-left: 0.6rem;
-  
  top: 26px;
 left: 539px;
 width: 200px;
 height: 89px;
-margin-right: -0.9rem;
+margin-right: 0.9rem;
 text-align: center;
 font: normal normal bold 29px/36px Kantumruy Pro;
 letter-spacing: 0px;
@@ -54,3 +52,5 @@ border-end-start-radius: 10px;
   margin-left: 3rem;
 }
 
+.separator{
+}

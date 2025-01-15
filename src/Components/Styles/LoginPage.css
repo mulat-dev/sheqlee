@@ -15,18 +15,20 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
+  margin-left: -13rem;
+  margin-top: -5rem;
 }
 
 /* Logo */
 .logo {
   top: 150px;
   left: 863px;
-  width: 111px;
-  height: 112px;
+  width: 200px;
+  height:201px;
   background: transparent  0% 0% no-repeat padding-box;
   opacity: 1;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 /* Header */
@@ -35,10 +37,11 @@ left: 787px;
 width: 348px;
 height: 54px;
 text-align: center;
-font: normal normal bold 24px/54px Recoleta;
+font: bolder 37px/54px Recoleta;
 letter-spacing: 0px;
 color: #000000;
 opacity: 1;
+margin-bottom: 4rem;
 }
 
 .header::after {
@@ -46,11 +49,11 @@ opacity: 1;
   display: block;
   margin: 1px auto 0;
   border-radius: 5px;
-width: 50%;
-height: 6px;
+width: 80%;
+height: 10px;
 background: #8967B3 0% 0% no-repeat padding-box;
 border-radius: 5px;
-margin-top: -0.4rem;
+margin-top: 0.1rem;
 }
 
 /* Form Title */
@@ -60,17 +63,18 @@ margin-top: -0.4rem;
   width: 102px;
   height: 30px;
   text-align: left;
-  font: normal normal bold 24px/41px Kantumruy Pro;
+  font: normal normal bolder 33px/41px Kantumruy Pro;
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  margin-bottom: 2rem;
 }
 
 /* Input Group */
 .input-group {
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: flex;
 }
 
@@ -79,11 +83,11 @@ margin-top: -0.4rem;
   outline: none;
   top: 597px;
   left: 707px;
-  width: 327px;
-  height: 50px;
+  width: 507px;
+  height: 89px;
   background: #dfdfdf 0% 0% no-repeat padding-box;
-  border-radius: 10px;
-  font-size: 17px;
+  border-radius: 16px;
+  font-size: 28px;
 }
 
 /* Password Group */
@@ -94,24 +98,24 @@ margin-top: -0.4rem;
 .password-toggle {
   position: absolute;
   top: 50%;
-  right: 55px;
+  right:120px;
   transform: translateY(-40%);
   cursor: pointer;
   color: #383737;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /* Submit Button */
 .submit-button {
   border: none;
   outline: none;
-  width: 130px;
-  height: 50px;
+  width: 180px;
+  height: 75px;
   background: #000000 0% 0% no-repeat padding-box;
-  border-radius: 10px;
+  border-radius: 17px;
   color: white;
   text-align: center;
-  font: normal normal bold 18px/36px Kantumruy Pro;
+  font: normal normal bold 30px/36px Kantumruy Pro;
   letter-spacing: 0px;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -119,7 +123,7 @@ margin-top: -0.4rem;
 
 .submit-button.active {
   background: #8967b3;
-  border-radius: 15px;
+  border-radius: 17px;
 }
 
 /* Links Container */
@@ -139,7 +143,7 @@ margin-top: -0.4rem;
   width: 198px;
   height: 28px;
   text-align: left;
-  font: normal normal 18px/28px Kantumruy Pro;
+  font: normal normal 25px/28px Kantumruy Pro;
   letter-spacing: 0px;
   color: #000000;
   margin-left: 2rem;
@@ -155,7 +159,7 @@ margin-top: -0.4rem;
   height: 28px;
   text-align: left;
   text-decoration: underline;
-  font: normal normal bold 18px/28px Kantumruy Pro;
+  font: normal normal bold 22px/28px Kantumruy Pro;
   letter-spacing: 0px;
   color: #0C47EC;
 }
@@ -163,10 +167,10 @@ margin-top: -0.4rem;
 .new-user {
   top: 0px;
   left: 0px;
-  width: 305px;
+  width: 600px;
   height: 28px;
   text-align: left;
-  font: normal normal  18px/28px Kantumruy Pro;
+  font: normal normal  25px/28px Kantumruy Pro;
   letter-spacing: 0px;
   color: #000000;
 }
@@ -178,7 +182,7 @@ margin-top: -0.4rem;
   height: 28px;
   text-align: left;
   text-decoration: underline;
-  font: normal normal bold 18px/28px Kantumruy Pro;
+  font: normal normal bold 23px/28px Kantumruy Pro;
   letter-spacing: 0px;
   color: #0C47EC;
 }

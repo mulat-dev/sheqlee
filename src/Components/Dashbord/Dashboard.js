@@ -22,24 +22,30 @@ const Dashboard = () => {
         >
           Job Posts
         </button>
+        <span className="separator">
+
+        </span>
         <button
           className={`tab ${activeTab === "companies" ? "active" : ""}`}
           onClick={() => handleTabChange("companies")}
         >
           Companies
         </button>
+        <span className="separator"></span>
         <button
           className={`tab ${activeTab === "freelancers" ? "active" : ""}`}
           onClick={() => handleTabChange("freelancers")}
         >
           Freelancers
         </button>
+        <span className="separator"></span>
         <button
           className={`tab ${activeTab === "emailAlerts" ? "active" : ""}`}
           onClick={() => handleTabChange("emailAlerts")}
         >
           Email Alerts
         </button>
+        <span className="separator"></span>
       </div>
 
       <div className="tab-content">

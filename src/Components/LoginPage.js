@@ -50,7 +50,7 @@ const LoginPage = ({ onLogin }) => {
             className="password-toggle"
             onClick={() => setShowPassword(!showPassword)}
         >
-            {!showPassword ? <FaEyeSlash /> : <FaEye />}
+            {showPassword ? <FaEyeSlash /> : <FaEye />}
         </span>
     </div>
     <div>

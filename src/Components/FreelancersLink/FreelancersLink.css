@@ -1,0 +1,13 @@
+.job-posts-container {
+    display: flex;
+   flex-direction: column;
+   padding: 20px;
+   width: 2200px;
+ height: 93vh;
+   background: #F7F7F7 0% 0% no-repeat padding-box;
+   border-radius: 0px 0px 20px 20px;
+   opacity: 1;
+   margin-left: -14rem;
+   margin-top: 9rem;
+   margin-bottom: 10rem;
+ }
