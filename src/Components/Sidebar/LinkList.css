@@ -1,56 +1,56 @@
 .link-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .link-item {
-    margin-left: -2.4rem;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .link-item:active {
-    background-color: #f0f0f0;
-    color: #000000;
-    font-weight: bolder;
-  }
-  
-  .link-icon {
-    width: 23px;
-    height: 23px;
-    background: transparent 0% 0% no-repeat padding-box;
-    margin-right: 1rem;
-    margin-left: 0rem;
-  }
-  
-  .link-label {
-    font: normal normal 27px/36px Kantumruy Pro;
-    color: #000000;
-    margin-left: 1rem;
-  }
-  
-  .link-item.active {
-    background-color: white;
-    font-weight: bold;
-  }
-  
-  .link-item.active .link-label {
-    color: #0a0a0a;
-    font-weight: bolder;
-    font-size: 30px;
-  }
-  
-  .link {
-    text-decoration: none; /* Removes underline */
-    color: inherit;
-  }
-  
-  .link:hover {
-    text-decoration: none; /* Removes underline on hover */
-    color: #007bff;
-  }
-  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-item {
+  margin-left: -2.4rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.link-item:active {
+  background-color: #f0f0f0;
+  color: #000000;
+  font-weight: bolder;
+}
+
+.link-icon {
+  width: 23px;
+  height: 23px;
+  background: transparent 0% 0% no-repeat padding-box;
+  margin-right: 1rem;
+  margin-left: 0rem;
+}
+
+.link-label {
+  font: normal normal 27px/36px Kantumruy Pro;
+  color: #000000;
+  margin-left: 1rem;
+}
+
+.link-item.active {
+  background-color: white;
+  font-weight: bold;
+}
+
+.link-item.active .link-label {
+  color: #0a0a0a;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/* Updated link styles */
+.link-list a {
+  text-decoration: none; /* Removes underline for all links */
+}
+
+.link-list a:hover,
+.link-list a:focus,
+.link-list a:visited {
+  text-decoration: none; /* Removes underline on hover, focus, and visited states */
+}

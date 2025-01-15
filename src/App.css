@@ -1,8 +1,9 @@
 .app{
-  top: 0px;
+  margin-top: -72rem;
 left: 0px;
 width: 1920px;
 height: 1080px;
-background: #FCFCFC 0% 0% no-repeat padding-box;
+background:#fff;
 opacity: 1;
+margin-left: -34rem;
 }

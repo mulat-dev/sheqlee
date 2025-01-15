@@ -1,9 +1,12 @@
 .sidebar {
   top: 0px;
   left: 0px;
-  width: 350px;
-  height: 1100px;
+  width:700px;
+  height: 110vh;
   background: #DFDFDF 0% 0% no-repeat padding-box;
   opacity: 1;
+  margin-left: 13rem;
+  margin-top: 10rem;
+  margin-right: 2rem;
   }
   

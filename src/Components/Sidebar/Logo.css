@@ -4,12 +4,13 @@
   }
   
   .logo img {
-    margin-top: 2rem;
+    top: 24px;
     left: 152px;
     width: 93px;
     height: 93px;
-    /* UI Properties */
     background: transparent  0% 0% no-repeat padding-box;
     opacity: 1;
+    margin-bottom:2rem;
+    margin-left: 11rem;
   }
   

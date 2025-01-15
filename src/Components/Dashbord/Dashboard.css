@@ -2,48 +2,43 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 1920px;
-height: 1000px;
+  width: 2210px;
+height: 93vh;
   background: #F7F7F7 0% 0% no-repeat padding-box;
   border-radius: 0px 0px 20px 20px;
   opacity: 1;
   margin-left: -14rem;
-  margin-top: -1rem;
+  margin-top: 9rem;
+  margin-bottom: 10rem;
 }
-
-.tabs {
-  margin-top: -1.8rem;
-  margin-left: 2rem;
-  top: 0px;
-  left: 518px;
-  width: 800px;
-  height: 90px;
-  background: #DFDFDF 0% 0% no-repeat padding-box;
-  border-radius:none;
-  opacity: 1;
-  
+.tabs{
+  margin-left: 4rem;
 }
 
 .tab {
   border: none;
-  margin-top: -1.8;
+  margin-top: -1.2rem;
+  margin-left: 0.6rem;
+  
  top: 26px;
 left: 539px;
 width: 200px;
-height: 90px;
+height: 89px;
+margin-right: -0.9rem;
 text-align: center;
-font: normal normal bold 23px/36px Kantumruy Pro;
+font: normal normal bold 29px/36px Kantumruy Pro;
 letter-spacing: 0px;
 color:#070606;
 opacity: 1;
-border-radius: 10px;
+border:none;
 background: #DFDFDF 0% 0% no-repeat padding-box;
-
+border-end-start-radius: 10px;
 }
 
 .tab.active {
   background-color: #020202; /* Active tab color */
   color: white;
+  border-bottom-left-radius:none;
 }
 .tab-content {
   top: 26px;
@@ -55,17 +50,7 @@ background: #DFDFDF 0% 0% no-repeat padding-box;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
+  margin-top: 4rem;
+  margin-left: 3rem;
 }
-.tab:not(:first-child)::before {
-  content: '';
-  top: 14px;
-  left: 908px;
-  width: 2px;
-  height: 70%;
-  background: #0c0c0c 0% 0% no-repeat padding-box;
-  border: 2px solid #070707;
-  border-radius: 1px;
-  opacity: 1;
-  margin-left: -3.5rem;
-margin-right: 0.98rem;
-}
+

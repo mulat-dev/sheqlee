@@ -1,0 +1,146 @@
+/* Container for the entire dashboard */
+.dashboard-container {
+    display: flex;
+    flex-direction: column; /* Stacking sections vertically */
+    gap: 3rem; /* Space between top and bottom sections */
+    margin-top: 5rem;
+    padding: 1rem;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 1;
+  }
+  
+  /* Top Section */
+  .top-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for top cards */
+    gap: 60px; /* Small gap between top cards */
+  }
+  
+  /* Bottom Section */
+  .bottom-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for bottom cards */
+    gap: 120px; /* Space between trend cards */
+  }
+  
+  /* Card Styles */
+  .kard{
+    top: 219px;
+    left: 518px;
+    width: 600px;
+    height: 500px;
+    background: #DFDFDF 0% 0% no-repeat padding-box;
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+    opacity: 1;
+  
+  }
+  .trend-card {
+    top: 619px;
+    left: 518px;
+    width: 900px;
+    height: 500px;
+    background: #DFDFDF 0% 0% no-repeat padding-box;
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+    opacity: 1;
+  }
+  
+  /* Typography for Kard Titles (Numbers) */
+  .kard h2,
+  .trend-card h2 {
+    font: normal normal bolder 60px/71px Kantumruy Pro;
+    color: #000000;
+    margin: 120px; /* Remove default margin */
+    padding: 0;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  
+  /* Description Text */
+  .kard p,
+  .trend-card p {
+    top: 797px;
+    left: 577px;
+    width: 400px;
+    text-align: center;
+    font: normal normal bold 33px/47px Kantumruy Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  
+  /* Select Dropdown */
+  .kard select {
+  width: 174px;
+  height: 80px;
+  background: #000000 0% 0% no-repeat padding-box;
+  border:none;
+  border-radius: 10px;
+  opacity: 1;
+  text-align: center;
+  font: normal normal normal 30px/36px Kantumruy Pro;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  }
+  
+  /* Dropdown hover and focus styles */
+  .kard select:hover,
+  .kard select:focus {
+    background: #333333;
+    outline: none;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Trend Card Layout */
+  .trend {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and trend percentage */
+  }
+  
+  /* Trend Arrow Icons */
+  .trend img {
+    top: 740px;
+    left: 984px;
+    width: 40px;
+    height: 58px;
+    background: transparent 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 47rem;
+    margin-top: -10rem;
+    margin-bottom: -2rem;
+  }
+  
+  /* Trend Up */
+  .trend-up {
+    color: #0f9d58;
+    font-size: 24px;
+    margin-top: -10rem;
+    font-weight: bold;
+  }
+  
+  /* Trend Down */
+  .trend-down {
+    color: #db4437;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -10rem;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .top-section,
+    .bottom-section {
+      grid-template-columns: 1fr; /* Stack all cards vertically */
+    }
+  
+    .dashboard-container {
+      gap: 2rem; /* Reduce gap for smaller screens */
+    }
+  }
+  

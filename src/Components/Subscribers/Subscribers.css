@@ -1,0 +1,58 @@
+/* Container for the entire dashboard */
+.subscribers {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 2210px;
+  height: 93vh;
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 20px 20px;
+    opacity: 1;
+    margin-left: -14rem;
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+  }
+  .tabs{
+    margin-left: 4rem;
+  }
+  
+  .tab {
+    border: none;
+    margin-top: -1.2rem;
+    margin-left: 0.6rem;
+    
+   top: 26px;
+  left: 539px;
+  width: 200px;
+  height: 89px;
+  margin-right: -0.9rem;
+  text-align: center;
+  font: normal normal bold 29px/36px Kantumruy Pro;
+  letter-spacing: 0px;
+  color:#070606;
+  opacity: 1;
+  border:none;
+  background: #DFDFDF 0% 0% no-repeat padding-box;
+  }
+  
+  .tab.active {
+    background-color: #020202; /* Active tab color */
+    color: white;
+    border-end-start-radius: 0;
+  }
+  .tab:not(.active) {
+    border-end-end-radius: 10px;}
+  
+  .tab-content {
+    top: 26px;
+    left: 539px;
+    width: 140px;
+    height: 90px;
+    text-align: left;
+    font: normal normal 30px/36px Kantumruy Pro;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 4rem;
+    margin-left: 3rem;
+  }

@@ -1,9 +1,9 @@
 import React from 'react';
-import './JobPosts.css';
+import './JobPostsTab.css';
 import upArrow from '../../assets/up-arrow.png';
 import downArrow from '../../assets/down-arrow.png';
 
-const JobPostsdashboard = () => {
+const JobPosts = () => {
   return (
     <div className="dashboard-container">
       {/* Top Section */}
@@ -60,4 +60,4 @@ const JobPostsdashboard = () => {
   );
 };
 
-export default JobPostsdashboard;
+export default JobPosts;

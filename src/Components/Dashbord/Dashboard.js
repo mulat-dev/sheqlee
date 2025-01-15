@@ -1,11 +1,11 @@
 // Dashboard.js
 
 import React, { useState } from "react";
-import JobPosts from "../JobPosts/JobPosts";
+import JobPosts from "../JobPostsTab/JobPostsTab";
 import "./Dashboard.css"; // Add your styling for tabs
 import Companies from '../Companies/Companies'
-import Freelancers from '../Freelancers/Freelancers';
-import EmailAlerts from '../EmailAlerts/EmailAlerts';
+import Freelancers from "./Freelancers";
+import EmailAlerts from './EmailAlerts';
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("jobPosts"); // Default tab
 

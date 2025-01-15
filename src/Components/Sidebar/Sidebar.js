@@ -4,7 +4,7 @@ import LinkList from "./LinkList";
 import ProfileView from "./ProfileView";
 import Logo from "./Logo";
 
-const Sidebar = () => {
+const Sidebar = ({onLogout}) => {
   const [activeLink, setActiveLink] = useState("dashboard"); // Default active link
 
   const handleLinkClick = (linkName) => {
@@ -14,7 +14,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <Logo />
-      <ProfileView />
+      <ProfileView onLogout={onLogout} />
       <ul className="sidebar-links">
         <LinkList activeLink={activeLink} onLinkClick={handleLinkClick} />
       </ul>

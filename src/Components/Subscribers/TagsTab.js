@@ -1,35 +1,40 @@
-import React from 'react';
-import './Companies.css';
+import React, { useState } from "react";
+import './Styles/TagsTab.css'; // Add styling similar to EmailAlerts.css
 import upArrow from '../../assets/up-arrow.png';
 import downArrow from '../../assets/down-arrow.png';
 
-const Companies = () => {
+const TagsTab = () => {
+  const [selectedYear, setSelectedYear] = useState("2022");
+  const [selectedMonth, setSelectedMonth] = useState("June");
+
   return (
     <div className="dashboard-container">
       {/* Top Section */}
       <div className="top-section">
         <div className="kard">
-          <h2>1,124</h2>
-          <p>Total companies registered</p>
+          <h2>14,124</h2>
+          <p>Total tag subs</p>
         </div>
 
         <div className="kard">
-          <h2>245</h2>
+          <h2>1,045</h2>
           <p>
-          Co. registered in
-            <select>
-              <option>2022</option>
+           Tag subs in
+            <select value={selectedYear} onChange={(e) => setSelectedYear(e.target.value)}>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
               {/* Add more years dynamically if needed */}
             </select>
           </p>
         </div>
 
         <div className="kard">
-          <h2>35</h2>
+          <h2>145</h2>
           <p>
-          Co. registered in
-            <select>
-              <option>June</option>
+            Tag subs in
+            <select value={selectedMonth} onChange={(e) => setSelectedMonth(e.target.value)}>
+              <option value="June">June</option>
+              <option value="July">July</option>
               {/* Add more months dynamically if needed */}
             </select>
           </p>
@@ -39,25 +44,25 @@ const Companies = () => {
       {/* Bottom Section */}
       <div className="bottom-section">
         <div className="trend-card">
-          <h2>175</h2>
+          <h2>984</h2>
           <div className="trend">
             <img src={upArrow} alt="Up arrow" />
             <span className="trend-up">11%</span>
           </div>
-          <p>Co. registered this year so far</p>
+          <p>Tag subs this year so far</p>
         </div>
 
         <div className="trend-card">
-          <h2>14</h2>
+          <h2>84</h2>
           <div className="trend">
             <img src={downArrow} alt="Down arrow" />
             <span className="trend-down">7%</span>
           </div>
-          <p>Co. registered this month so far</p>
+          <p>Tag subs this month so far</p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Companies;
+export default TagsTab;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import dashboardIcon from "../../assets/dashboard.png";
 import jobPostsIcon from "../../assets/job-posts.png";
 import companiesIcon from "../../assets/companies.png";
@@ -28,10 +28,10 @@ const LinkList = ({ activeLink, onLinkClick }) => {
     <ul className="link-list">
       {links.map((link) => (
         <li key={link.name} className={`link-item ${activeLink === link.name ? "active" : ""}`}>
-          <Link to={link.to} className="link" onClick={() => onLinkClick(link.name)}>
+          <NavLink to={link.to} className="link" onClick={() => onLinkClick(link.name)}>
             <img src={link.icon} alt={`${link.label} icon`} className="link-icon" />
             <span className="link-label">{link.label}</span>
-          </Link>
+          </NavLink>
         </li>
       ))}
     </ul>
